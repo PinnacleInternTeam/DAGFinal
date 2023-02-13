@@ -6,7 +6,7 @@ import Login from './components/Login';
 import Home1 from "./components/home1";
 import Home2 from "./components/home2";
 import App from './App'
-import Home4 from './components/Home4';
+
 // import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
   <Routes>
                 <Route exact path="/" element={ <App /> } />
-                  <Route exact path="/login" element={<Home4/>} /> 
+                  <Route exact path="/login" element={<Login/>} /> 
                   <Route exact path="/home1" element={<Home1/>} /> 
                   <Route exact path="/home2" element={<Home2/>} /> 
                  
