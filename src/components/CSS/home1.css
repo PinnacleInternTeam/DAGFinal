@@ -2,10 +2,22 @@
     width:80pxpx;
     height: 60px;
 }
+table,th,td{
+  border:1px solid black;
+  text-align: center;
+
+}
+table{
+  width: 100%;
+}
+
+
 
 .navcolor{
   background-color: #877bae;
 }
+
+
 
   
   .sidebar {

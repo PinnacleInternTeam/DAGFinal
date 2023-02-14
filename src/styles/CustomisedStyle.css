@@ -9,6 +9,7 @@
   color: #429f8c;
 }
 
+
 .heading_color {
   color: #4d4d4d;
 }
@@ -1388,8 +1389,8 @@ input[type="radio"].error {
   border-radius: 3px;
 }
 .img_icon_size {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
 }
 
 .img_icon_size2 {
