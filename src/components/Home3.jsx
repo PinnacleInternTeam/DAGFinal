@@ -1,46 +1,50 @@
 import React from 'react'
 import  Modal  from 'react-modal'
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
 
 export default function Home3() {
  
   return (
     <div>
-      hii
-      {/* <div className="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div className="modal-dialog" role="document">
-    <div className="modal-content">
-      <div className="modal-header text-center">
-        <h4 className="modal-title w-100 font-weight-bold">Sign in</h4>
-        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div className="modal-body mx-3">
-        <div className="md-form mb-5">
-          <i className="fas fa-envelope prefix grey-text"></i>
-          <input type="email" id="defaultForm-email" className="form-control validate"/>
-          <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
-        </div>
+      hiiii
+      <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+      <br />
+      <Navbar bg="primary" variant="dark">
+        <Container>
+          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
 
-        <div className="md-form mb-4">
-          <i className="fas fa-lock prefix grey-text"></i>
-          <input type="password" id="defaultForm-pass" className="form-control validate"/>
-          <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
-        </div>
+      <br />
+      <Navbar bg="light" variant="light">
+        <Container>
+          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
 
-      </div>
-      <div className="modal-footer d-flex justify-content-center">
-        <button className="btn btn-default">Login</button>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div className="text-center">
-  <a href="" className="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Launch
-    Modal Login Form</a>
-</div> */}
+     
 
 
 
