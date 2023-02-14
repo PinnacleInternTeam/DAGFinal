@@ -23,7 +23,7 @@ export default function Organization() {
 
         </div>
         <div className="col-lg-10 col-md-12 col-sm-12 col-xs-12 text-left"><br /><br />
-        <h1 style={{ fontFamily: "Serif", color: "#877bae" }} className="font-weight-bold ">Organisation List</h1><br/>
+        <h1 style={{ fontFamily: "Serif", color: "#877bae" }} className="font-weight-bold ">Organisation Lists</h1><br/>
 
         {/* <button><img src={refresh} alt="my image" style={{border:"none"}} /></button> */}
 
@@ -34,7 +34,7 @@ export default function Organization() {
                 src={addicon}
                 alt="add-icon"
                 title="add icon"
-              /> &nbsp;&nbsp;
+              /> &nbsp;&nbsp;&nbsp;
              <img
                 className="img_icon_size log text-right"
                 // onClick={() => onClickReset()}
