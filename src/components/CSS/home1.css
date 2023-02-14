@@ -7,6 +7,9 @@ table,th,td{
   text-align: center;
 
 }
+button{
+  background: #877bae;
+}
 table{
   width: 100%;
 }

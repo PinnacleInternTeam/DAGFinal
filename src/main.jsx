@@ -8,6 +8,7 @@ import Home2 from "./components/home2";
 import App from './App'
 import Home3 from './components/Home3';
 import Organization from './components/Organization';
+import Addorg from './components/Modals/Addorg';
 
 
 // import './index.css'
@@ -23,6 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                   <Route exact path="/home2" element={<Home2/>} /> 
                   <Route exact path="/home3" element={<Home3/>} />
                   <Route exact path="/org" element={<Organization/>} />
+                  <Route exact path="/Addorg" element={<Addorg/>} />
                  
                 {/* <Route element={<Routefile/>} /> */}
   </Routes>
