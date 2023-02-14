@@ -46,7 +46,7 @@ export default function Login() {
            
             <div className='form-group form_top'>
                 <input type="text" style={{ borderBottom: "1px solid #000000" }} className="form-control form_contct" onChange={(e)=>setName(e.target.value)}></input><br />
-                <label>Email*</label><br /><br />
+                <label>Username*</label><br /><br />
                 <input type="text" style={{ borderBottom: "1px solid #000000" }} className="form-control form_contct"  onChange={(e)=>setPassword(e.target.value)}></input><br />
                 <label>Password*</label><br /><br /><br />
                 <div className='text-center'>

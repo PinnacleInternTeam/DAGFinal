@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
   <React.StrictMode>
   <Routes>
-                <Route exact path="/" element={ <App /> } />
+                <Route exact path="/" element={ <Login/>} />
                   <Route exact path="/login" element={<Login/>} /> 
                   <Route exact path="/home1" element={<Home1/>} /> 
                   <Route exact path="/home2" element={<Home2/>} /> 

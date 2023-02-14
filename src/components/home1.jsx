@@ -4,8 +4,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Icon from '../assets/Icon1.jpg';
+import Icon from '../assets/dag_logo1.png';
 import '../components/CSS/home1.css'
+import Headersuper from './Layout/Headersuper';
 
 export default function Home1() {
     let navigate = useNavigate();
@@ -20,52 +21,28 @@ export default function Home1() {
         localStorage.setItem("authenticated", false);
     }
     return (
-        <>
-            <div>
+        <div>
+             <Headersuper />
+       
+        
+        <div className="row">
+            
 
-                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                    <img src={Icon} className="Icon"></img>
-                    <Container>
 
-                        <Navbar.Brand href="#home">Super Admin</Navbar.Brand>
-                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                        <Navbar.Collapse id="responsive-navbar-nav">
-                            <Nav className="me-auto">
-                                <Nav.Link href="#features">Organization</Nav.Link>
-                                <Nav.Link href="#pricing">User</Nav.Link>
+        <div className="col-lg-1 col-md-12 col-sm-12 col-xs-12 text-center">
 
-                            </Nav>
-                            <Nav>
-                                <Nav.Link href="#deets">LogOut</Nav.Link>
+        </div>
+        <div className="col-lg-10 col-md-12 col-sm-12 col-xs-12 text-left"><br /><br />
+        <h1 style={{ fontFamily: "Serif", color: "#877bae" }} className="font-weight-bold ">Dashboard</h1>
+        </div>
+        <div className="col-lg-1 col-md-12 col-sm-12 col-xs-12 text-left">
+        </div>
+    </div>
+    </div>
 
-                            </Nav>
-                        </Navbar.Collapse>
-                    </Container>
-                </Navbar>
-
-            </div>
-            <div class="sidebar">
-                <a class="active" href="#home">JAN</a>
-                <a href="#news">FEB</a>
-                <a href="#contact">MAR</a>
-                <a href="#about">APR</a>
-                <a href="#about">MAY</a>
-                <a href="#about">JUN</a>
-                <a href="#about">JUL</a>
-                <a href="#about">AUG</a>
-                <a href="#about">SEP</a>
-                <a href="#about">OCT</a>
-                <a href="#about">NOV</a>
-                <a href="#about">DEC</a>
-            </div>
-
-            {/* <div class="content">
-                <h2>hai</h2>
-                <p>hello.</p>
-                <p>manipal</p>
-                <h3>Welcome.</h3>
-            </div> */}
-        </>
+        
+      
+            
 
     )
 }
