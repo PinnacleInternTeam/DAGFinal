@@ -767,12 +767,13 @@ label {
 .table-bordered > tfoot > tr > td,
 .table-bordered > tfoot > tr > th,
 .table-bordered > thead > tr > td,
-.table-bordered > thead > tr > th {
-  border: 1px solid #429f8c;
+.table-bordered > thead > tr > th 
+.table-bordered>tbody>tr>td>button{
+  border: 1px solid #877bae;
 }
 
 #datatable2 th {
-  background: #429f8c;
+  background: #877bae;
   color: #fff;
   padding: 8px;
   text-align: center;
