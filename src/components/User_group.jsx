@@ -79,7 +79,7 @@ export default function User_group() {
                         <tr className='headingsizes'>
                             <th>User Group</th>
                             <th>Operation</th>
-                            <th>Operationnnn</th>
+                           
                             
                          </tr>
                         <tr>
