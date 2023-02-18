@@ -6,16 +6,23 @@ import Icon from '../../assets/dag_logo1.png'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 export default function Headersuper() {
+    const navigate=useNavigate();
 
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const handlelogout = () => {
+        setShow(false);
+        navigate("/")
+    }
    
     return (
         <div>
@@ -40,8 +47,8 @@ export default function Headersuper() {
                             </Nav>
                             <Nav className='col-lg-1 col-md-6 col-sm-12 col-xs-12 '>
                                 <NavDropdown title="Dev"  >
-                                     <NavDropdown.Item ><Link to="/user_group">User Group</Link></NavDropdown.Item>
-                                    <NavDropdown.Item >  <Link to="#"   onClick={handleShow}>
+                                     <NavDropdown.Item className='navlinkitem' ><Link to="/user_group">User Group</Link></NavDropdown.Item>
+                                    <NavDropdown.Item className='navlinkitem' >  <Link to="#"   onClick={handleShow}>
                             Logout
                           </Link>
                           </NavDropdown.Item>
@@ -70,7 +77,7 @@ export default function Headersuper() {
          
 
             <button onClick={handleClose}   className="btn contact_reg btn_color"> NO</button>
-            <button onClick={handleClose} className="btn contact_reg btn_color ">  YES</button>
+            <button onClick={handlelogout} className="btn contact_reg btn_color ">  YES</button>
           </Modal.Footer>
                 </Modal>
           

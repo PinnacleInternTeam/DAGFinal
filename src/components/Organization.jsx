@@ -64,10 +64,11 @@ export default function Organization() {
 
                         />
                     </div><br />
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center body-inner no-padding table-responsive">
 
 
                     <table border="1">
-                        <tr>
+                        <tr className='headingsizes'>
                             <th>Org Name</th>
                             <th>Email</th>
                             <th>Phone No.</th>
@@ -77,6 +78,7 @@ export default function Organization() {
                         <tr>
                         </tr>
                     </table>
+                    </div>
                 </div>
                 <div className="col-lg-1 col-md-12 col-sm-12 col-xs-12 text-left">
                 </div>
@@ -116,7 +118,7 @@ export default function Organization() {
                                             <div className="control-group col-md-6 col-lg-6 col-sm-6 col-xs-6">
                                                 <label className="control-label">Start Date <span >*</span></label>
                                                 <div className="controls">
-                                                    <input name="cat_name" id="cat_name" type="text" className="form-control" value="" />
+                                                    <input name="cat_name" id="cat_name" type="date" className="form-control" value="" />
                                                     <span id="category_result" className="form-input-info"></span>
                                                 </div>
                                             </div>
@@ -233,7 +235,7 @@ export default function Organization() {
                     </Modal.Body>
                     <Modal.Footer>
                         <button onClick={edithandleClose} className="btn contact_reg btn_color"> CANCEL</button>
-                        <button onClick={edithandleClose} className="btn contact_reg btn_color">  ADD</button>
+                        <button onClick={edithandleClose} className="btn contact_reg btn_color">  EDIT</button>
                     </Modal.Footer>
                 </Modal>
 

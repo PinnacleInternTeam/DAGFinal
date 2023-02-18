@@ -46,7 +46,7 @@ export default function Home1() {
        
             
         <table border="1">
-            <tr>
+            <tr className='headingsizes'>
                 <th>Org Name</th>
                 <th>Email</th>
                 <th>Phone No.</th>

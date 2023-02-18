@@ -214,7 +214,7 @@ h5:last-child {
 ::-moz-selection {
   /* Code for Firefox */
   color: #fff;
-  background: #429f8c;
+  background: #877bae;
 }
 
 ::selection {
@@ -226,7 +226,7 @@ h5:last-child {
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 2px;
-  background: #429f8c;
+  background: #877bae;
 }
 
 .footer {
@@ -482,12 +482,12 @@ p {
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 2px;
-  background: #429f8c;
+  background: #877bae;
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: #429f8c;
+  background: #877bae;
 }
 
 #regDes {
@@ -733,7 +733,7 @@ label {
 
 ::selection {
   color: #fff;
-  background: #0da028;
+  background: #877bae;
 }
 
 .dropdown-menu {
@@ -1352,6 +1352,18 @@ input[type="radio"].error {
   top: 50%;
 }
 
+
+
+.headingsizes{
+  font-size:larger;
+}
+td{
+  height: 50px;
+}
+
+
+
+
 .confirmbox-heading {
   font-family: Verdana, Arial, sans-serif;
   font-size: 1.1em;
@@ -1389,6 +1401,11 @@ input[type="radio"].error {
   font-weight: bold;
 
 }
+.navlinkitem:hover{
+  background-color: rgb(231, 157, 105);
+}
+
+
 
 
 .navlink.active {
@@ -1397,9 +1414,8 @@ input[type="radio"].error {
 .navlink:hover{
   background-color: rgb(231, 157, 105);
 }
-#highlight,#highlight:hover,#highlight:active,#highlight:focus{
-  color: #0da028;
-}
+
+
 
 
 

@@ -8,6 +8,7 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
 
+
 import '../components/CSS/home1.css'
 import Headersuper from './Layout/Headersuper';
 import Addorg from './Modals/Addorg';
@@ -70,10 +71,13 @@ export default function Organization() {
 
                         />
                     </div><br />
+                  
 
+                  
 
-                    <table border="1">
-                        <tr>
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center body-inner no-padding table-responsive">
+                    <table border="1"  >
+                        <tr className='headingsizes'>
                             <th>User Name</th>
                             <th>Org Name</th>
                             <th>User Group</th>
@@ -84,12 +88,23 @@ export default function Organization() {
                             <th>Deactivate</th>
                         </tr>
                         <tr>
+                            <td>niya </td>
+                            <td>mahe</td>
+                            <td>admin</td>
+                            <td>niya@gmail.com</td>
+                            <td>9876543210</td>
+                            <td>udupi karnataka</td>
+                            <td><button>edit</button></td>
+                            <td><button>deactive</button></td>
+
+                           
 
                         </tr>
                     </table>
                 </div>
                 <div className="col-lg-1 col-md-12 col-sm-12 col-xs-12 text-left">
                 </div>
+                  </div>
    
 
 
@@ -297,7 +312,7 @@ export default function Organization() {
                     </Modal.Body>
                     <Modal.Footer>
                         <button onClick={edithandleClose} className="btn contact_reg btn_color"> CANCEL</button>
-                        <button onClick={edithandleClose} className="btn contact_reg btn_color">  ADD</button>
+                        <button onClick={edithandleClose} className="btn contact_reg btn_color">  UPDATE</button>
                     </Modal.Footer>
                 </Modal>
 
@@ -309,7 +324,7 @@ export default function Organization() {
                     centered>
                     <Modal.Header closeButton>
 
-                        <Modal.Title className='container'><h1 className='font-weight-bold '>DEACTIVATE ORGANIZATION</h1></Modal.Title>
+                        <Modal.Title className='container'><h1 className='font-weight-bold '>DEACTIVATE USER</h1></Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
                     <label className="control-label">Reason for Deactivating:</label>
