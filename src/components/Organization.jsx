@@ -171,6 +171,16 @@ export default function Organization() {
                                                 </div>
                                             </div>
                                         </div>
+                                        <div className="row form-group">
+                                            <div className="control-group col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                                <label className="control-label">Org Logo <span >*</span></label>
+                                                <div className="controls">
+                                                    <input name="logo_name" id="logo_name" type="file" className="form-control" value="" />
+                                                    <span id="category_result" className="form-input-info"></span>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
                                         {/* <div className="row form-group">
                                         <div className="control-group col-md-6 col-lg-6 col-sm-6 col-xs-6">
                                                 <label className="control-label">End Date <span >*</span></label>
