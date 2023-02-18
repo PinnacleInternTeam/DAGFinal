@@ -4,7 +4,7 @@ export default function Addorg() {
   return (
     <div>
      <h2>
-     <div
+     {/* <div
       className="modal show"
       style={{ display: 'block', position: 'initial' }}
     >
@@ -23,7 +23,7 @@ export default function Addorg() {
         </Modal.Footer>
       </Modal.Dialog>
     </div>
-     
+      */}
      </h2>
       
     </div>
