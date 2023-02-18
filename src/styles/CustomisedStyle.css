@@ -1389,12 +1389,20 @@ input[type="radio"].error {
   font-weight: bold;
 
 }
-/* .navlink:hover {
-  background-color: rgb(231, 157, 105);
-} */
-.navlink.active{
+
+
+.navlink.active {
+ color: #d9d9d9;
+}
+.navlink:hover{
   background-color: rgb(231, 157, 105);
 }
+#highlight,#highlight:hover,#highlight:active,#highlight:focus{
+  color: #0da028;
+}
+
+
+
 
 .btn-group-xs > .btn,
 .btn-xs {

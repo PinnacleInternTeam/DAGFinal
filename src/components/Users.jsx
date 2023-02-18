@@ -16,8 +16,18 @@ export default function Organization() {
     const navigate = useNavigate();
 
     const [show, setShow] = useState(false);
+    const [editshow, editsetShow] = useState(false);
+    const [deleteshow, deletesetShow] = useState(false);
+
+
     const handleClose = () => setShow(false);
+    const edithandleClose = () => editsetShow(false);
+    const deletehandleClose = () => deletesetShow(false);
+
+
     const handleShow = () => setShow(true);
+    const edithandleShow = () => editsetShow(true);
+    const deletehandleShow = () => deletesetShow(true);
 
 
 
@@ -39,6 +49,10 @@ export default function Organization() {
                     {/* <button><img src={refresh} alt="my image" style={{border:"none"}} /></button> */}
 
                     <div className='text-right'>
+                    <button onClick={deletehandleShow}>Delete</button>
+                        <button onClick={edithandleShow}>edit</button>
+
+
                         <img
                             className="img_icon_size log text-right"
                             //   onClick={() => handleAddOrg()}
@@ -76,26 +90,7 @@ export default function Organization() {
                 </div>
                 <div className="col-lg-1 col-md-12 col-sm-12 col-xs-12 text-left">
                 </div>
-                {/* <div
-      className="modal show"
-      style={{ display: 'block', position: 'initial' }}
-    >
-      <Modal.Dialog>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal title</Modal.Title>
-        </Modal.Header>
-
-        <Modal.Body>
-          <p>Modal body text goes here.</p>
-        </Modal.Body>
-
-        <Modal.Footer>
-          <Button variant="secondary">Close</Button>
-          <Button variant="primary">Save changes</Button>
-        </Modal.Footer>
-      </Modal.Dialog>
-    </div>
-         */}
+   
 
 
 
@@ -218,6 +213,125 @@ export default function Organization() {
                     </Modal.Footer>
                 </Modal>
             </div>
+
+
+              {/* edit modal */}
+              <Modal show={editshow} onHide={edithandleClose}
+                    size="lg"
+                    aria-labelledby="contained-modal-title-vcenter"
+                    centered>
+                    <Modal.Header closeButton>
+
+                        <Modal.Title className='container'><h1 className='font-weight-bold '>EDIT USERS</h1></Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <form >
+                            <div className="container ">
+                                <section className="body">
+                                    <div className="body-inner">
+                                        <div className="row form-group">
+                                            <div className="control-group col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                                <label className="control-label">Full Name </label>
+                                                <div className="controls">
+                                                    <input name="user_fullname" id="user_fullname" type="text" className="form-control" value="" />
+                                                    <span id="category_result" className="form-input-info"></span>
+                                                </div>
+                                            </div>
+                                            <div className="control-group col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                                <label className="control-label" >User Group</label>
+                                                <div className="controls">
+                                                    
+                                                    <select name="usergrp" className="form-control" >
+                                                        <option value="admin">admin</option>
+                                                        <option >clerk</option>
+
+                                                    </select>
+                                                    {/* <input name="user_usergrp" id="user_usergrp" type="select" className="form-control" readonly />
+                                                    <span className="form-input-info" ></span> */}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="row form-group">
+                                            <div className="control-group col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                            <label className="control-label">UserName</label>
+                                                <div className="controls">
+                                                    <input name="username" id="username" type="text" className="form-control" readonly />
+                                                    <span className="form-input-info" ></span>
+                                                </div>
+                                                
+
+                                            </div>
+                                            <div className="control-group col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                            <label className="control-label">Phone No.</label>
+                                                <div className="controls">
+                                                    <input name="user_phone" id="user_phone" type="text" className="form-control" readonly />
+                                                    <span className="form-input-info" ></span>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                        <div className="row form-group">
+                                            <div className="control-group col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                            <label className="control-label">Email</label>
+                                                <div className="controls">
+                                                    <input name="user_email" id="user_email" type="text" className="form-control" readonly />
+                                                    <span className="form-input-info" ></span>
+                                                </div>
+                                           
+                                               
+                                            </div>
+                                            <div className="control-group col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                        
+                                                <label className="control-label">Address</label>
+                                                <div className="controls">
+                                                    <textarea rows="2" name="user_address" id="user_address" className="form-control" ></textarea>
+                                                    <span className="form-input-info" ></span>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </form>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <button onClick={edithandleClose} className="btn contact_reg btn_color"> CANCEL</button>
+                        <button onClick={edithandleClose} className="btn contact_reg btn_color">  ADD</button>
+                    </Modal.Footer>
+                </Modal>
+
+
+                     {/* delete modal */}
+                     <Modal show={deleteshow} onHide={deletehandleClose}
+                    size="lg"
+                    aria-labelledby="contained-modal-title-vcenter"
+                    centered>
+                    <Modal.Header closeButton>
+
+                        <Modal.Title className='container'><h1 className='font-weight-bold '>DEACTIVATE ORGANIZATION</h1></Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                    <label className="control-label">Reason for Deactivating:</label>
+                        <form>
+                            <div className="controls">
+                                <textarea rows="2" name="org_reason" id="org_reason" className="form-control" ></textarea>
+                                <span className="form-input-info" ></span>
+                            </div>
+
+                        </form>
+                        <label className="control-label">Do you want to Deactivate this User?</label>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <button onClick={deletehandleClose} className="btn contact_reg btn_color"> NO</button>
+                        <button onClick={deletehandleClose} className="btn contact_reg btn_color">  YES</button>
+                    </Modal.Footer>
+                </Modal>
+
+
+
+
+
         </div>
     )
 }

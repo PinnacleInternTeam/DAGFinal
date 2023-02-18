@@ -34,8 +34,8 @@ export default function Headersuper() {
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto container text-white">
                                 <Nav.Link className='navlink'><Link to="/org">Organization</Link> </Nav.Link>
-                                <Nav.Link  className='navlink'><Link to="/users">Users</Link> </Nav.Link>
-                                {/* <Nav.Link href="/User">User</Nav.Link> */}
+                                <Nav.Link className='navlink'><Link to="/users">Users</Link></Nav.Link>
+                                
 
                             </Nav>
                             <Nav className='col-lg-1 col-md-6 col-sm-12 col-xs-12 '>

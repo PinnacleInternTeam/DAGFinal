@@ -239,7 +239,7 @@ export default function Organization() {
 
 
 
-                {/* edit modal */}
+                {/* delete modal */}
                 <Modal show={deleteshow} onHide={deletehandleClose}
                     size="lg"
                     aria-labelledby="contained-modal-title-vcenter"
