@@ -67,7 +67,7 @@ export default function Organization() {
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center body-inner no-padding table-responsive">
 
 
-                    <table border="1">
+                    <table border="1" id="datatable2" >
                         <tr className='headingsizes'>
                             <th>Org Name</th>
                             <th>Email</th>

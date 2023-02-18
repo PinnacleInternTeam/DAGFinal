@@ -45,7 +45,7 @@ export default function Home1() {
               </div>
        
             
-        <table border="1">
+        <table border="1" id="datatable2" >
             <tr className='headingsizes'>
                 <th>Org Name</th>
                 <th>Email</th>

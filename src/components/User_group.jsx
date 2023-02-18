@@ -75,7 +75,7 @@ export default function User_group() {
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center body-inner no-padding table-responsive">
 
 
-                    <table className='table table-bordered table-striped table-hover' border="1">
+                    <table className='table table-bordered table-striped table-hover' border="1" id="datatable2" >
                         <tr className='headingsizes'>
                             <th>User Group</th>
                             <th>Operation</th>

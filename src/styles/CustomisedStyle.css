@@ -779,6 +779,7 @@ label {
   text-align: center;
   position: sticky;
   top: 0;
+  font-size:large
 }
 
 .fixTableHead {
@@ -1369,7 +1370,7 @@ td{
   font-family: Verdana, Arial, sans-serif;
   font-size: 1.1em;
   width: 100%;
-  background: #429f8c !important;
+  background: #877bae !important;
   padding: 0.3em 1em;
   color: #fff !important;
   height: 46px !important;
