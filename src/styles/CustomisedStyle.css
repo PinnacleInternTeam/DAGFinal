@@ -1384,6 +1384,17 @@ input[type="radio"].error {
   background: #877bae;
 
 }
+.navlink{
+  font-size: 20px;
+  font-weight: bold;
+
+}
+/* .navlink:hover {
+  background-color: rgb(231, 157, 105);
+} */
+.navlink.active{
+  background-color: rgb(231, 157, 105);
+}
 
 .btn-group-xs > .btn,
 .btn-xs {

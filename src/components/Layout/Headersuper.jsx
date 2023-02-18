@@ -33,8 +33,8 @@ export default function Headersuper() {
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto container text-white">
-                                <Nav.Link ><Link to="/org">Organization</Link> </Nav.Link>
-                                <Nav.Link ><Link to="/users">Users</Link> </Nav.Link>
+                                <Nav.Link className='navlink'><Link to="/org">Organization</Link> </Nav.Link>
+                                <Nav.Link  className='navlink'><Link to="/users">Users</Link> </Nav.Link>
                                 {/* <Nav.Link href="/User">User</Nav.Link> */}
 
                             </Nav>
