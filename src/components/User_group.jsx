@@ -73,27 +73,7 @@ export default function Organization() {
                 </div>
                 <div className="col-lg-1 col-md-12 col-sm-12 col-xs-12 text-left">
                 </div>
-                {/* <div
-      className="modal show"
-      style={{ display: 'block', position: 'initial' }}
-    >
-      <Modal.Dialog>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal title</Modal.Title>
-        </Modal.Header>
-
-        <Modal.Body>
-          <p>Modal body text goes here.</p>
-        </Modal.Body>
-
-        <Modal.Footer>
-          <Button variant="secondary">Close</Button>
-          <Button variant="primary">Save changes</Button>
-        </Modal.Footer>
-      </Modal.Dialog>
-    </div>
-         */}
-
+          
 
             
 
@@ -169,22 +149,7 @@ export default function Organization() {
                                             </div>
                                            
                                         </div>
-                                        {/* <div className="row form-group">
-                                        <div className="control-group col-md-6 col-lg-6 col-sm-6 col-xs-6">
-                                                <label className="control-label">End Date <span >*</span></label>
-                                                <div className="controls">
-                                                    <input name="cat_name" id="cat_name" type="text" className="form-control" value="" />
-                                                    <span id="category_result" className="form-input-info"></span>
-                                                </div>
-                                            </div>
-                                            <div className="control-group col-md-6 col-lg-6 col-sm-6 col-xs-6">
-                                                <br /><label className="control-label">Address</label>
-                                                <div className="controls">
-                                                    <textarea rows="2"  name="category_description" id="category_description" className="form-control" ></textarea>
-                                                    <span className="form-input-info" ></span>
-                                                </div>
-                                            </div>
-                                        </div> */}
+                                      
                                         <div className="row form-group ">
                                             <div className="control-group col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right">
                                                 <br /><label className="control-label" >* Indicates mandatory fields.</label>
@@ -192,21 +157,14 @@ export default function Organization() {
                                         </div>
                                     </div>
                                 </section>
-
                             </div>
-
                         </form>
                     </Modal.Body>
                     <Modal.Footer>
                         <button onClick={handleClose}   style={{ background: "#877bae" }} className="btn contact_reg "> CANCEL</button>
                         <button onClick={handleClose} style={{ background: "#877bae" }} className="btn contact_reg ">  ADD</button>
                     
-                        {/* <Button  onClick={handleClose}>
-                            CANCEL
-                        </Button>
-                        <Button variant="primary" onClick={handleClose}>
-                            ADD
-                        </Button> */}
+                      
                     </Modal.Footer>
                 </Modal>
             </div>
