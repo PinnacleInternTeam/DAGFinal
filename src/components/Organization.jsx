@@ -74,7 +74,6 @@ export default function Organization() {
                             <th>Phone No.</th>
                             <th>Address</th>
                             <th>Operation</th>
-                            <th>Opedit</th>
                         </tr>
                         <tr>
                         </tr>
