@@ -1380,7 +1380,7 @@ input[type="radio"].error {
   height: 26px;
   padding: 0px 6px;
 }
-button{
+.btn_color{
   background: #877bae;
 
 }

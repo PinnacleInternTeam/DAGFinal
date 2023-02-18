@@ -12,6 +12,7 @@ import Addorg from './components/Modals/Addorg';
 import Users from './components/Users'
 // import User_group from './components/User_group'
 import User_group from './components/User_group'
+import "./styles/CustomisedStyle.css";
 
 
 // import './index.css'

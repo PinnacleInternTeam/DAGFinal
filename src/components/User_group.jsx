@@ -12,7 +12,7 @@ import '../components/CSS/home1.css'
 import Headersuper from './Layout/Headersuper';
 import Addorg from './Modals/Addorg';
 
-export default function Organization() {
+export default function User_group() {
     const navigate = useNavigate();
 
     const [show, setShow] = useState(false);
@@ -35,7 +35,7 @@ export default function Organization() {
                 <div className="col-lg-1 col-md-12 col-sm-12 col-xs-12 text-center">
                 </div>
                 <div className="col-lg-10 col-md-12 col-sm-12 col-xs-12 text-left"><br /><br />
-                    <h1 style={{ fontFamily: "Serif", color: "#877bae" }} className="font-weight-bold ">Organisation Lists</h1><br />
+                    <h1 style={{ fontFamily: "Serif", color: "#877bae" }} className="font-weight-bold ">UserGroup Lists</h1><br />
                     {/* <button><img src={refresh} alt="my image" style={{border:"none"}} /></button> */}
 
                     <div className='text-right'>
@@ -60,15 +60,13 @@ export default function Organization() {
 
                     <table border="1">
                         <tr>
-                            <th>Org Name</th>
-                            <th>Email</th>
-                            <th>Phone No.</th>
-                            <th>Address</th>
+                            <th>User Group</th>
                             <th>Operation</th>
-                        </tr>
+                            
+                         </tr>
                         <tr>
 
-                        </tr>
+                       </tr>
                     </table>
                 </div>
                 <div className="col-lg-1 col-md-12 col-sm-12 col-xs-12 text-left">
@@ -93,62 +91,24 @@ export default function Organization() {
                                     <div className="body-inner">
                                         <div className="row form-group">
                                             <div className="control-group col-md-6 col-lg-6 col-sm-6 col-xs-6">
-                                                <label className="control-label">Org Name <span >*</span></label>
+                                              
                                                 <div className="controls">
-                                                    <input name="cat_name" id="cat_name" type="text" className="form-control" value="" />
+                                                <label className="control-label">User Group <span >*</span></label><br/>
+                                                  <input name="cat_name" id="cat_name" type="text" className="form-control" value="" />
                                                     <span id="category_result" className="form-input-info"></span>
                                                 </div>
                                             </div>
-                                            <div className="control-group col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                            {/* <div className="control-group col-md-6 col-lg-6 col-sm-6 col-xs-6">
                                                 <label className="control-label">Email<span >*</span></label>
                                                 <div className="controls">
                                                     <input name="category_status" id="category_status" type="text" className="form-control" readonly />
                                                     <span className="form-input-info" ></span>
                                                 </div>
-                                            </div>
+                                            </div> */}
                                         </div>
-                                        <div className="row form-group">
-                                            <div className="control-group col-md-6 col-lg-6 col-sm-6 col-xs-6">
-                                                <label className="control-label">Start Date <span >*</span></label>
-                                                <div className="controls">
-                                                    <input name="cat_name" id="cat_name" type="text" className="form-control" value="" />
-                                                    <span id="category_result" className="form-input-info"></span>
-                                                </div>
-                                            </div>
-                                            <div className="control-group col-md-6 col-lg-6 col-sm-6 col-xs-6">
-                                                <label className="control-label">Phone No.<span >*</span></label>
-                                                <div className="controls">
-                                                    <input name="category_status" id="category_status" type="text" className="form-control" readonly />
-                                                    <span className="form-input-info" ></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="row form-group">
-                                            <div className="control-group col-md-6 col-lg-6 col-sm-6 col-xs-6">
-                                                <label className="control-label">End  Date <span >*</span></label>
-                                                <div className="controls">
-                                                    <input name="cat_name" id="cat_name" type="text" className="form-control" value="" />
-                                                    <span id="category_result" className="form-input-info"></span>
-                                                </div>
-                                            </div>
-                                            <div className="control-group col-md-6 col-lg-6 col-sm-6 col-xs-6">
-                                                <label className="control-label">Address</label>
-                                                <div className="controls">
-                                                <textarea rows="2"  name="category_description" id="category_description" className="form-control" ></textarea>
-                                                    <span className="form-input-info" ></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="row form-group">
-                                            <div className="control-group col-md-6 col-lg-6 col-sm-6 col-xs-6">
-                                                <label className="control-label">Org Logo <span >*</span></label>
-                                                <div className="controls">
-                                                    <input name="logo_name" id="logo_name" type="file" className="form-control" value="" />
-                                                    <span id="category_result" className="form-input-info"></span>
-                                                </div>
-                                            </div>
-                                           
-                                        </div>
+                                       
+                                       
+                                       
                                       
                                         <div className="row form-group ">
                                             <div className="control-group col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right">
@@ -161,8 +121,8 @@ export default function Organization() {
                         </form>
                     </Modal.Body>
                     <Modal.Footer>
-                        <button onClick={handleClose}   style={{ background: "#877bae" }} className="btn contact_reg "> CANCEL</button>
-                        <button onClick={handleClose} style={{ background: "#877bae" }} className="btn contact_reg ">  ADD</button>
+                        <button onClick={handleClose}    className="btn contact_reg btn_color "> CANCEL</button>
+                        <button onClick={handleClose}  className="btn contact_reg btn_color">  ADD</button>
                     
                       
                     </Modal.Footer>

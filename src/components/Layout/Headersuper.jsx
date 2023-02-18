@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useState}from 'react'
 
 //  import Icon from './src/assets/Icon1.png';
 import Icon from '../../assets/dag_logo1.png'
@@ -7,7 +7,16 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
+
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
 export default function Headersuper() {
+
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+   
     return (
         <div>
 
@@ -32,7 +41,10 @@ export default function Headersuper() {
                             <Nav className='col-lg-1 col-md-6 col-sm-12 col-xs-12 '>
                                 <NavDropdown title="Dev"  >
                                      <NavDropdown.Item ><Link to="/user_group">User Group</Link></NavDropdown.Item>
-                                    <NavDropdown.Item >LogOut</NavDropdown.Item>
+                                    <NavDropdown.Item >  <Link to="#"   onClick={handleShow}>
+                            Logout
+                          </Link>
+                          </NavDropdown.Item>
                                 </NavDropdown>
                               
 
@@ -43,10 +55,27 @@ export default function Headersuper() {
             
 
             </div>
+            <Modal show={show} onHide={handleClose}
+                    size="lg"
+                    aria-labelledby="contained-modal-title-vcenter"
+                    centered>
+                     <Modal.Header closeButton>
+                    
+                    <Modal.Title className='container'><h1 className='font-weight-bold '>CONFIRMATION</h1></Modal.Title>
+                </Modal.Header>
+          <Modal.Body>
+            <h5>Are you sure you want to logout?</h5>
+          </Modal.Body>
+          <Modal.Footer>
+         
 
-
-
-
+            <button onClick={handleClose}   className="btn contact_reg btn_color"> NO</button>
+            <button onClick={handleClose} className="btn contact_reg btn_color ">  YES</button>
+          </Modal.Footer>
+                </Modal>
+          
+           
+            
         </div>
     )
 }

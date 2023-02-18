@@ -192,14 +192,12 @@ export default function Organization() {
                                         </div>
                                     </div>
                                 </section>
-
                             </div>
-
                         </form>
                     </Modal.Body>
                     <Modal.Footer>
-                        <button onClick={handleClose}   style={{ background: "#877bae" }} className="btn contact_reg "> CANCEL</button>
-                        <button onClick={handleClose} style={{ background: "#877bae" }} className="btn contact_reg ">  ADD</button>
+                        <button onClick={handleClose}   className="btn contact_reg btn_color"> CANCEL</button>
+                        <button onClick={handleClose}  className="btn contact_reg btn_color">  ADD</button>
                     
                         {/* <Button  onClick={handleClose}>
                             CANCEL
